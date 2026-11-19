@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reverse Logistics &amp; E-Waste Collection | FTS EL Phase 2</title>
+  <meta name="description" content="Field investigation, data analysis and logistics planning for e-waste reverse logistics in Bengaluru." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span class="brand-dot"></span>E-Waste RL</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#objectives">Objectives</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#field">Field Data</a>
+      <a href="#flow">Flow</a>
+      <a href="#plan">Plan</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#team">Team</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Department of Industrial Engineering and Management · VI Semester · 2022 Scheme</p>
+    <h1>Reverse Logistics and <span class="hl">E-Waste Collection</span></h1>
+    <p class="subtitle">Field Investigation, Data Analysis and Logistics Planning</p>
+    <p class="course">Freight Transportation Systems and Logistics Planning · EL Phase 2 · 2025–26</p>
+    <div class="hero-cta">
+      <a href="#problem" class="btn btn-primary">Explore the study</a>
+      <a href="#plan" class="btn btn-ghost">See the logistics plan</a>
+    </div>
+    <div class="hero-chips">
+      <span>📍 Bengaluru</span><span>♻️ E-Waste (Management) Rules, 2022</span><span>🚚 CVRP + p-median</span>
+    </div>
+  </div>
+  <p class="tagline">Go, change the world</p>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>01</span> Problem Statement</h2>
+    <div class="grid-2">
+      <div>
+        <p class="lead">India is among the world's largest generators of electronic waste, and volumes keep rising with shorter device lifecycles and rapid digital adoption.</p>
+        <p>Much of it still bypasses authorised channels: end-of-life devices are stored at home, sold to informal scrap dealers or thrown out with municipal waste. This loses recoverable materials and releases toxic substances such as <strong>lead, mercury and cadmium</strong>.</p>
+        <p>Local data on how much e-waste is generated, where it accumulates and how it moves is limited. A systematic field study is therefore required to <strong>quantify e-waste flows</strong> and to <strong>plan a cost-effective collection and transportation network</strong>.</p>
+      </div>
+      <div class="card-stack">
+        <h3 class="mini-title">Why the system fails today</h3>
+        <div class="issue"><span>📍</span><div><strong>Few, scattered collection points</strong><p>Drop-off is inconvenient for households.</p></div></div>
+        <div class="issue"><span>📅</span><div><strong>Irregular pick-up</strong><p>No fixed schedule, so devices pile up or leak out.</p></div></div>
+        <div class="issue"><span>🚛</span><div><strong>Part-empty trips</strong><p>Low vehicle utilisation raises cost per kg.</p></div></div>
+        <div class="issue"><span>💸</span><div><strong>Costly transport to recyclers</strong><p>Long hauls to authorised recyclers.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section id="intro" class="section alt">
+  <div class="container">
+    <h2 class="section-title"><span>02</span> Introduction</h2>
+    <div class="grid-3">
+      <div class="info-card">
+        <div class="icon">🔄</div>
+        <h3>Reverse Logistics</h3>
+        <p>The movement of goods from the point of consumption back to a point of recovery for reuse, recycling, remanufacturing or safe disposal.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">💻</div>
+        <h3>E-Waste</h3>
+        <p>Discarded computers, mobile phones, batteries, appliances and accessories. A high-value but hazardous reverse flow: it holds recoverable metals as well as toxic parts.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">⚖️</div>
+        <h3>EPR Mandate</h3>
+        <p>The E-Waste (Management) Rules, 2022 place Extended Producer Responsibility on producers, so organised collection and transport are essential.</p>
+      </div>
+    </div>
+    <p class="note-box">This study carries out field investigations in <strong>Bengaluru</strong> to measure e-waste generation, map current disposal practices and collection points, and use the data to plan the collection network: <em>collection points, consolidation hub, vehicle routes and pick-up frequency.</em></p>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section id="objectives" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>03</span> Objectives</h2>
+    <div class="primary-obj">
+      <p class="eyebrow">Primary Objective</p>
+      <p>Design a <strong>cost-effective reverse logistics and collection network</strong> for e-waste, based on field data, that <strong>increases formal collection</strong> and <strong>lowers transport cost per kilogram</strong>.</p>
+    </div>
+    <p class="eyebrow center">Secondary Objectives</p>
+    <ol class="obj-grid">
+      <li>Carry out field investigations and surveys on e-waste generation and disposal practices.</li>
+      <li>Identify and map existing collection points, aggregators and authorised recyclers.</li>
+      <li>Quantify e-waste volumes by source type and product category.</li>
+      <li>Analyse the flow, distance and cost of current collection and transportation.</li>
+      <li>Develop a facility location and vehicle routing plan for e-waste collection.</li>
+      <li>Recommend a collection strategy aligned with the E-Waste (Management) Rules, 2022.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="methodology" class="section alt">
+  <div class="container">
+    <h2 class="section-title"><span>04</span> Methodology</h2>
+    <div class="timeline">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Identification of Study Area and Stakeholders</h3>
+          <ul>
+            <li>Select Bengaluru zones with high e-waste generation: RVCE campus area, residential layouts, IT corridors, commercial hubs.</li>
+            <li>Map generators, collection points, scrap dealers, aggregators and authorised recyclers.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Field Investigation and Data Collection</h3>
+          <ul>
+            <li>Structured surveys and interviews with households, students, offices and retailers.</li>
+            <li>Record at each source: quantity and category of e-waste (kg/month), storage period and current disposal route (formal/informal), GPS location and distance to the nearest collection point.</li>
+            <li>Log collection vehicle trips: distance, time, load and cost.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Dataset Preparation</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Field</th><th>Unit</th><th>How Captured</th></tr></thead>
+              <tbody>
+                <tr><td>E-waste quantity</td><td>kg / month</td><td>Weighing and survey</td></tr>
+                <tr><td>Product category</td><td>CPCB category</td><td>Item-wise checklist</td></tr>
+                <tr><td>Source location</td><td>Lat / Long</td><td>GPS and Google Maps</td></tr>
+                <tr><td>Distance to collection point</td><td>km</td><td>Distance matrix</td></tr>
+                <tr><td>Trip time, load and cost</td><td>min, kg, Rs</td><td>Vehicle trip log</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Data Analysis</h3>
+          <ul>
+            <li>Descriptive statistics of e-waste generation by source type and zone.</li>
+            <li>Estimate generation per household / institution and project total collectable volume.</li>
+            <li>Analyse formal vs informal disposal share and barriers to participation.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Logistics Planning and Model Development</h3>
+          <ul>
+            <li><strong>Facility location model</strong> (p-median / set covering) for collection points and hub.</li>
+            <li><strong>Vehicle routing model</strong> (CVRP) for scheduled pick-up runs to the hub.</li>
+            <li><em>Output:</em> number and location of collection points, fleet size, routes, pick-up frequency and cost per kg.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Validation</h3>
+          <ul>
+            <li>Compare the planned routes and cost against current (as-is) practice.</li>
+            <li>Sensitivity analysis on volume, participation rate and fuel cost; evaluate total distance, cost per tonne and vehicle utilisation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIELD DATA -->
+<section id="field" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>05</span> Field Data Collection</h2>
+    <div class="field-grid">
+      <div class="field-card"><div class="fc-head"><span>🏠</span><h3>Household Survey</h3></div>
+        <ul><li>Questionnaire for apartments and students</li><li>Devices held, age, intended disposal</li><li>Awareness of take-back and EPR</li><li>Willingness to travel to a drop-off</li></ul></div>
+      <div class="field-card"><div class="fc-head"><span>🏫</span><h3>Institutional Audit</h3></div>
+        <ul><li>RVCE labs, offices and hostels</li><li>Count of idle and obsolete devices</li><li>Weigh and categorise stock</li><li>Existing storage and disposal practice</li></ul></div>
+      <div class="field-card"><div class="fc-head"><span>🏪</span><h3>Retailer &amp; Scrap Dealer Interviews</h3></div>
+        <ul><li>Service centres, exchange outlets</li><li>Scrap dealer volumes and prices paid</li><li>Share flowing to informal sector</li></ul></div>
+      <div class="field-card"><div class="fc-head"><span>🏭</span><h3>Recycler Visit</h3></div>
+        <ul><li>Authorised recycler near Bengaluru</li><li>Capacity, fees, EPR tie-ups</li><li>Gate-to-gate transport cost</li><li>Handling and compliance process</li></ul></div>
+      <div class="field-card"><div class="fc-head"><span>🛰️</span><h3>Vehicle &amp; Route Logging</h3></div>
+        <ul><li>GPS logs of pick-up runs</li><li>Distance, time, load and fuel</li><li>Loading / unloading time</li><li>Cost per trip and per kg</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="flow" class="section alt">
+  <div class="container">
+    <h2 class="section-title"><span>06</span> Reverse Logistics Flow</h2>
+    <div class="flow">
+      <div class="flow-node n1"><h4>Generation</h4><ul><li>Households</li><li>Institutions &amp; offices</li><li>Retailers</li></ul></div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node n2"><h4>Collection Points</h4><ul><li>Drop-off bins &amp; kiosks</li><li>Campus drives</li><li>Dealer take-back</li></ul></div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node n3"><h4>Consolidation Hub</h4><ul><li>Weighing &amp; sorting</li><li>Storage</li><li>Data recording</li></ul></div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node n4"><h4>Authorised Recycler</h4><ul><li>Dismantling</li><li>Material recovery</li><li>EPR documentation</li></ul></div>
+    </div>
+    <div class="outcomes">
+      <div class="outcome"><span>🔁</span><h4>Refurbish &amp; Reuse</h4><p>Working devices resold or donated</p></div>
+      <div class="outcome"><span>🧲</span><h4>Material Recovery</h4><p>Metals, plastics and glass back to industry</p></div>
+      <div class="outcome"><span>☣️</span><h4>Safe Disposal</h4><p>Hazardous residue to authorised facility</p></div>
+    </div>
+    <div class="decisions">
+      <p class="eyebrow">Decisions to optimise</p>
+      <div class="decision-chips">
+        <span>Number &amp; location of collection points</span>
+        <span>Hub location</span>
+        <span>Pick-up frequency</span>
+        <span>Vehicle type, fleet size &amp; routes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>07</span> Tools Used</h2>
+    <div class="tools-grid">
+      <div class="tool"><h4>Google Forms &amp; Field Sheets</h4><p>Surveys and interviews to record e-waste quantity, category and disposal practice.</p></div>
+      <div class="tool"><h4>Digital Weighing Scale</h4><p>Measured e-waste stock at institutions and collection points in kg.</p></div>
+      <div class="tool"><h4>GPS, Google Maps &amp; QGIS</h4><p>Located sources and collection points; mapped routes and distances.</p></div>
+      <div class="tool"><h4>MS Excel &amp; Python</h4><p>Data cleaning, statistical analysis, visualisation and cost calculations.</p></div>
+      <div class="tool"><h4>PuLP / Google OR-Tools</h4><p>Solved the facility location and vehicle routing models.</p></div>
+      <div class="tool"><h4>Google Maps Distance Matrix</h4><p>Road distances and travel times between sources, points and hub.</p></div>
+      <div class="tool wide"><h4>E-Waste (Management) Rules, 2022 &amp; CPCB Guidelines</h4><p>Regulatory framework for collection, storage and EPR.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section id="plan" class="section alt">
+  <div class="container">
+    <h2 class="section-title"><span>08</span> Proposed Logistics Plan</h2>
+    <p class="lead center">Field data from the surveys and audits will size a <strong>three-tier reverse logistics network</strong>.</p>
+    <div class="tiers">
+      <div class="tier t1"><div class="tier-label">Tier 1</div><h3>Collection Points</h3><p>Bins, kiosks, drives and retailer take-back</p></div>
+      <div class="tier-conn">milk runs →</div>
+      <div class="tier t2"><div class="tier-label">Tier 2</div><h3>Consolidation Hub</h3><p>Sorting, weighing, storage and data</p></div>
+      <div class="tier-conn">full truck loads →</div>
+      <div class="tier t3"><div class="tier-label">Tier 3</div><h3>Authorised Recycler</h3><p>Dismantling and material recovery</p></div>
+    </div>
+    <div class="grid-2 plan-text">
+      <div class="info-card">
+        <h3>🚚 Scheduled milk runs</h3>
+        <p>Pick-up runs are planned as scheduled milk runs, with frequency set by fill rate and distance. This cuts empty running and cost per kg while meeting the E-Waste (Management) Rules, 2022.</p>
+      </div>
+      <div class="info-card">
+        <h3>🎯 Expected outcomes</h3>
+        <ul class="check"><li>Higher formal collection share</li><li>Lower transport cost per kg</li><li>Better vehicle utilisation</li></ul>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Interactive network sketch</h3>
+    <p class="muted">An illustrative layout of the three tiers, not field data. Click <em>Shuffle</em> to generate a new set of collection points and see a nearest-neighbour milk-run route from the hub.</p>
+    <div class="map-wrap">
+      <canvas id="netCanvas" width="900" height="460" aria-label="Illustrative collection network"></canvas>
+      <div class="map-controls">
+        <label>Collection points <input type="range" id="nPoints" min="5" max="30" value="14" /><span id="nPointsVal">14</span></label>
+        <label>Vehicle capacity (stops) <input type="range" id="cap" min="3" max="15" value="6" /><span id="capVal">6</span></label>
+        <button class="btn btn-primary small" id="shuffle">Shuffle</button>
+        <div class="map-stats" id="mapStats"></div>
+      </div>
+      <div class="legend"><span class="lg cp"></span>Collection point <span class="lg hub"></span>Consolidation hub <span class="lg rec"></span>Recycler</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section id="strategy" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>09</span> Collection Strategy by Source</h2>
+    <div class="table-wrap">
+      <table class="strategy">
+        <thead><tr><th>Source</th><th>Typical E-waste</th><th>Collection Mode</th><th>Pick-up Frequency</th></tr></thead>
+        <tbody>
+          <tr><td>🏠 Households &amp; apartments</td><td>Phones, chargers, small appliances, batteries</td><td>Drop-off bins, on-call doorstep pick-up</td><td><span class="pill">Monthly / on demand</span></td></tr>
+          <tr><td>🏫 Educational institutions (RVCE)</td><td>PCs, monitors, lab equipment, printers</td><td>Campus drives and dedicated bin</td><td><span class="pill">Once per semester</span></td></tr>
+          <tr><td>🏢 Corporate offices &amp; IT parks</td><td>Laptops, servers, UPS units</td><td>Scheduled bulk pick-up, buy-back</td><td><span class="pill">Quarterly</span></td></tr>
+          <tr><td>🏪 Retailers &amp; service centres</td><td>Exchange and repair-rejected devices</td><td>Take-back through dealer network</td><td><span class="pill">Fortnightly</span></td></tr>
+          <tr><td>♻️ Scrap dealers (kabadiwalas)</td><td>Mixed e-scrap</td><td>Aggregator tie-up with incentive</td><td><span class="pill">Weekly</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note-box"><strong>Inference:</strong> Matching the collection mode and pick-up frequency to each source type is expected to raise the formal collection share and reduce cost per kg. The values will be confirmed with the field data.</p>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="section alt">
+  <div class="container">
+    <h2 class="section-title"><span>10</span> Cost-per-kg Calculator</h2>
+    <p class="muted center">Enter values from your vehicle trip logs to compare the as-is practice with a planned milk run. Defaults are placeholders: replace them with field data.</p>
+    <div class="calc">
+      <div class="calc-col">
+        <h3>As-is practice</h3>
+        <label>Trips per month <input type="number" id="a_trips" value="20" min="0" /></label>
+        <label>Avg distance per trip (km) <input type="number" id="a_dist" value="25" min="0" step="0.1" /></label>
+        <label>Avg load per trip (kg) <input type="number" id="a_load" value="80" min="0" /></label>
+        <label>Cost per km (Rs) <input type="number" id="a_cpk" value="18" min="0" step="0.1" /></label>
+        <label>Fixed cost per trip (Rs) <input type="number" id="a_fix" value="300" min="0" /></label>
+      </div>
+      <div class="calc-col">
+        <h3>Planned milk run</h3>
+        <label>Trips per month <input type="number" id="p_trips" value="8" min="0" /></label>
+        <label>Avg distance per trip (km) <input type="number" id="p_dist" value="40" min="0" step="0.1" /></label>
+        <label>Avg load per trip (kg) <input type="number" id="p_load" value="200" min="0" /></label>
+        <label>Cost per km (Rs) <input type="number" id="p_cpk" value="18" min="0" step="0.1" /></label>
+        <label>Fixed cost per trip (Rs) <input type="number" id="p_fix" value="300" min="0" /></label>
+      </div>
+      <div class="calc-out" id="calcOut"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>11</span> Team Members</h2>
+    <div class="team-grid">
+      <div class="member"><div class="avatar">1</div><h4>[Enter name]</h4><p>[Enter USN]</p></div>
+      <div class="member"><div class="avatar">2</div><h4>[Enter name]</h4><p>[Enter USN]</p></div>
+      <div class="member"><div class="avatar">3</div><h4>[Enter name]</h4><p>[Enter USN]</p></div>
+      <div class="member"><div class="avatar">4</div><h4>[Enter name]</h4><p>[Enter USN]</p></div>
+      <div class="member"><div class="avatar">5</div><h4>[Enter name]</h4><p>[Enter USN]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section id="references" class="section alt">
+  <div class="container">
+    <h2 class="section-title"><span>12</span> References</h2>
+    <ol class="refs">
+      <li>Ministry of Environment, Forest and Climate Change (2022). <em>E-Waste (Management) Rules, 2022.</em> Government of India, New Delhi.</li>
+      <li>Central Pollution Control Board (2016). <em>Guidelines for Environmentally Sound Management of E-Waste.</em> CPCB, New Delhi.</li>
+      <li>Forti, V., Baldé, C. P., Kuehr, R., &amp; Bel, G. (2020). <em>The Global E-waste Monitor 2020.</em> UNU, ITU and ISWA, Bonn/Geneva/Rotterdam.</li>
+      <li>Rogers, D. S., &amp; Tibben-Lembke, R. S. (1999). <em>Going Backwards: Reverse Logistics Trends and Practices.</em> Reverse Logistics Executive Council, Pittsburgh.</li>
+      <li>Fleischmann, M., et al. (1997). Quantitative models for reverse logistics: A review. <em>European Journal of Operational Research, 103</em>(1), 1–17.</li>
+      <li>Nagurney, A., &amp; Toyasaki, F. (2005). Reverse supply chain management and electronic waste recycling. <em>Transportation Research Part E, 41</em>(1), 1–28.</li>
+      <li>Toth, P., &amp; Vigo, D. (2014). <em>Vehicle Routing: Problems, Methods, and Applications</em> (2nd ed.). SIAM, Philadelphia.</li>
+    </ol>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="thanks">Thank you!</p>
+  <p>Department of Industrial Engineering and Management · Freight Transportation Systems and Logistics Planning · EL Phase 2 · 2025–26</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
